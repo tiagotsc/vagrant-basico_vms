@@ -126,7 +126,9 @@ Vms disponibilizadas no VirtualBox
 4 - Quando todo o processo terminar, abra o putty e forneça o IP de umas das VMs, no exemplo, vou acessar a VM1:
 
 IP: 192.168.56.150
+
 Usuário: root ou vagrant
+
 Senha: vagrant
 
 ![App Screenshot](https://github.com/tiagotsc/vagrant-basico_vms/blob/main/images/img5.png)
