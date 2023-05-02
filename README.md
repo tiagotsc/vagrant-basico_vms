@@ -115,7 +115,7 @@ end
 # Liga ou cria as VMs, caso ainda não existam
 vagrant up
 ```
-O processo demora um pouco e todos os passos que são executados podem ser acompanhados em tempo real linha de comando.
+O processo demora um pouco e todos os passos que são executados podem ser acompanhados em tempo real via linha de comando.
 
 ![App Screenshot](https://github.com/tiagotsc/vagrant-basico_vms/blob/main/images/img3.png)
 
