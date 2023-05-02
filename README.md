@@ -133,7 +133,8 @@ Usuário: vagrant
 
 Senha: vagrant
 
-Logado na VM!
+Logado com sucesso. VM pronta para uso!
+
 ![App Screenshot](https://github.com/tiagotsc/vagrant-basico_vms/blob/main/images/img6.png)
 
 O mesmo pode ser feito nas outras VMs, caso queira acessá-las.
