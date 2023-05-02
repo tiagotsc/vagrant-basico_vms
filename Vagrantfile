@@ -4,8 +4,8 @@
 # Definindo a quantidade e configuração de cada máquina
 machines = {
   "vm1"   => {"memory" => "2048", "cpu" => "2", "ip" => "150", "image" => "centos/7"},
-  #"vm2"   => {"memory" => "2048", "cpu" => "2", "ip" => "151", "image" => "centos/7"},
-  #"vm3"   => {"memory" => "2048", "cpu" => "2", "ip" => "152", "image" => "centos/7"}
+  "vm2"   => {"memory" => "2048", "cpu" => "2", "ip" => "151", "image" => "centos/7"},
+  "vm3"   => {"memory" => "2048", "cpu" => "2", "ip" => "152", "image" => "centos/7"}
 }
 
 Vagrant.configure("2") do |config|
