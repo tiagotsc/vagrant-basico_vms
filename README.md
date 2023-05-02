@@ -44,7 +44,7 @@ Abaixo de cada um segue o link para download.
 
 #### Arquivo Vagrantfile
 
-https://github.com/tiagotsc/vagrant-basico_vms/blob/07adecac66da064c547c1987fcdafa507902cfca/Vagrantfile#L1-L100
+https://github.com/tiagotsc/vagrant-basico_vms/blob/07adecac66da064c547c1987fcdafa507902cfca/Vagrantfile#L1-L62
 
 3 – Ainda dentro da pasta “**projetos**”, vamos subir nossas VMs, via linha de comando, execute:
 
