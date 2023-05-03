@@ -3,7 +3,7 @@
 
 Criar de forma rápida um conjunto de VMs para testes ou desenvolvimento de algo com tudo já configurado conforme a necessidade.
 
-No exemplo a seguir serão criados 3 VMs no VirtualBox, que terão as seguintes definições:
+No exemplo a seguir serão criados 3 VMs no VirtualBox, que terão as seguintes identificações:
 
 | Hostname   | IP       |
 | :---------- | :--------- |
