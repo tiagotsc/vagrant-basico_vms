@@ -40,13 +40,13 @@ Abaixo de cada um segue o link para download.
 
 2 - Entre na pasta “**projeto**” e dentro dela crie um arquivo chamado **Vagrantfile**, apenas o nome sem extensão, adicione o seguinte conteúdo e salve.
 
-![App Screenshot](https://github.com/tiagotsc/vagrant-basico_vms/blob/main/images/img1.png)
+![App Screenshot](images/img1.png)
 
 https://github.com/tiagotsc/vagrant-basico_vms/blob/07adecac66da064c547c1987fcdafa507902cfca/Vagrantfile#L1-L62
 
 3 – Ainda dentro da pasta “**projetos**”, vamos subir nossas VMs, via linha de comando, execute:
 
-![App Screenshot](https://github.com/tiagotsc/vagrant-basico_vms/blob/main/images/img2.png)
+![App Screenshot](images/img2.png)
 
 ```bash
 # Liga ou cria as VMs, caso ainda não existam
@@ -54,11 +54,11 @@ vagrant up
 ```
 O processo demora um pouco e todos os passos que são executados podem ser acompanhados em tempo real via linha de comando.
 
-![App Screenshot](https://github.com/tiagotsc/vagrant-basico_vms/blob/main/images/img3.png)
+![App Screenshot](images/img3.png)
 
 Vms disponibilizadas no VirtualBox
 
-![App Screenshot](https://github.com/tiagotsc/vagrant-basico_vms/blob/main/images/img4.png)
+![App Screenshot](images/img4.png)
 
 4 - Quando todo o processo terminar, abra o putty e forneça o IP de umas das VMs, no exemplo, vou acessar a VM1:
 
@@ -68,11 +68,11 @@ Usuário: root ou vagrant
 
 Senha: vagrant
 
-![App Screenshot](https://github.com/tiagotsc/vagrant-basico_vms/blob/main/images/img5.png)
+![App Screenshot](images/img5.png)
 
 Logado com sucesso. VM pronta para uso!
 
-![App Screenshot](https://github.com/tiagotsc/vagrant-basico_vms/blob/main/images/img6.png)
+![App Screenshot](images/img6.png)
 
 O mesmo pode ser feito nas outras VMs, caso queira acessá-las.
 
