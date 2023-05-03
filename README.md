@@ -34,7 +34,7 @@ Abaixo de cada um segue o link para download.
 
   https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
-### Etapas a se seguir
+### Siga as etapas
 
 1 - Crie uma pasta com nome de sua preferência em qualquer lugar do seu SO. No meu caso vou chama lá de “**projeto**”.
 
