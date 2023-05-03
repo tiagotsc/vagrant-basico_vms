@@ -1,7 +1,9 @@
 ﻿
 ## Vagrant - Provisionando VMs para testes ou desenvolvimento
 
-Criar de forma rápida um conjunto de VMs para testes ou desenvolvimento de algo com tudo já configurado conforme a necessidade.
+Será criado de forma rápida e objetiva, com poucos comandos, um conjunto de VMs que poderá servir de base para testes ou desenvolvimento de algo.
+
+Inclusive é possível definir uma série de configurações e já subi-las no momento da criação das VMs. Assim quando se acessar as VMs, elas já estarão configuradas e prontas para uso, conforme a necessidade.
 
 No exemplo a seguir serão criados 3 VMs no VirtualBox, que terão as seguintes identificações:
 
