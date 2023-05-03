@@ -38,37 +38,38 @@ Abaixo de cada um segue o link para download.
 
 ### Siga as etapas
 
-1 - Crie uma pasta com nome de sua preferência em qualquer lugar do seu SO. No meu caso vou chama lá de “**projeto**”.
+1 - Crie uma pasta com nome de sua preferência em qualquer lugar do seu SO. No meu caso vou chama lá de **projeto**.
 
-2 - Entre na pasta “**projeto**” e dentro dela crie um arquivo chamado **Vagrantfile**, apenas o nome sem extensão, adicione o seguinte conteúdo e salve.
+2 - Entre na pasta **projeto** e dentro dela crie um arquivo chamado **Vagrantfile**, apenas o nome sem extensão, adicione o seguinte conteúdo e salve.
 
 ![App Screenshot](images/img1.png)
 
 https://github.com/tiagotsc/vagrant-basico_vms/blob/07adecac66da064c547c1987fcdafa507902cfca/Vagrantfile#L1-L62
 
-3 - Ainda dentro da pasta “**projetos**”, vamos subir nossas VMs, via linha de comando, execute:
-
-![App Screenshot](images/img2.png)
+3 - Ainda dentro da pasta **projetos**, vamos subir nossas VMs, via linha de comando, execute:
 
 ```bash
 # Liga ou cria as VMs, caso ainda não existam
 vagrant up
 ```
+
+![App Screenshot](images/img2.png)
+
 O processo demora um pouco e todos os passos que são executados podem ser acompanhados em tempo real via linha de comando.
 
 ![App Screenshot](images/img3.png)
 
-Vms disponibilizadas no VirtualBox
+Vms disponibilizadas no VirtualBox e já em execução.
 
 ![App Screenshot](images/img4.png)
 
 4 - Quando todo o processo terminar, abra o putty e forneça o IP de umas das VMs, no exemplo, vou acessar a VM1:
 
-IP: 192.168.56.150
+**IP:** 192.168.56.150
 
-Usuário: root ou vagrant
+**Usuário:** root ou vagrant
 
-Senha: vagrant
+**Senha:** vagrant
 
 ![App Screenshot](images/img5.png)
 
