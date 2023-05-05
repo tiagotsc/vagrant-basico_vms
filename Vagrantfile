@@ -24,11 +24,11 @@ Vagrant.configure("2") do |config|
 
   machines.each do |name, conf|
     config.vm.define "#{name}" do |machine|
-	  # Todo ambiente virtual Vagrant requer uma imagem para construir.
+      # Todo ambiente virtual Vagrant requer uma imagem para construir.
       machine.vm.box = "#{conf["image"]}"
-	  # Definindo o hostname da VM
+      # Definindo o hostname da VM
       machine.vm.hostname = "#{name}"
-	  # Crie uma rede privada, que permite acesso somente de host à máquina
+      # Crie uma rede privada, que permite acesso somente de host à máquina
       # usando um IP específico.
       machine.vm.network "private_network", ip: "192.168.56.#{conf["ip"]}"
       # Crie uma rede pública, que geralmente corresponda à rede em ponte.
@@ -36,25 +36,25 @@ Vagrant.configure("2") do |config|
       # sua rede.
       # machine.vm.network "public_network", ip: "192.168.0.#{conf["ip"]}"
       machine.vm.provider "virtualbox" do |vb|
-	    # Nome VM
+        # Nome VM
         vb.name = "#{name}"
-		# Define a memória RAM VM
+        # Define a memória RAM VM
         vb.memory = conf["memory"]
-		# Defina a quantidade de CPUs VM
+        # Defina a quantidade de CPUs VM
         vb.cpus = conf["cpu"]
-		# Nome do grupo no VirtualBox que conterá as VMs
+        # Nome do grupo no VirtualBox que conterá as VMs
         vb.customize ["modifyvm", :id, "--groups", "/GrupoVms"]
       end
-	  # Executa shell script inline
- 	  machine.vm.provision "shell", inline: "hostnamectl set-hostname #{name}"
-	  config.vm.provision "shell", inline: <<-SHELL
-	  HOSTS=$(head -n7 /etc/hosts)
-	  echo -e "$HOSTS" > /etc/hosts
-	  echo '192.168.56.#{conf["ip"]} #{name}' >> /etc/hosts
-	  # Habilita acesso SSH através de senha
-	  sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
-	  systemctl restart sshd
-	  SHELL
+      # Executa shell script inline
+      machine.vm.provision "shell", inline: "hostnamectl set-hostname #{name}"
+      config.vm.provision "shell", inline: <<-SHELL
+      HOSTS=$(head -n7 /etc/hosts)
+      echo -e "$HOSTS" > /etc/hosts
+      echo '192.168.56.#{conf["ip"]} #{name}' >> /etc/hosts
+      # Habilita acesso SSH através de senha
+      sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+      systemctl restart sshd
+      SHELL
     end
   end
   # Executa shell script externo, para o caso de querer subir as VMs instalando pacotes, configurando serviços e aplicações
