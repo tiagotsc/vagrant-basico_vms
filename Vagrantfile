@@ -45,18 +45,18 @@ Vagrant.configure("2") do |config|
 		# Nome do grupo no VirtualBox que conterá as VMs
         vb.customize ["modifyvm", :id, "--groups", "/GrupoVms"]
       end
-	# Executa shell script inline
- 	machine.vm.provision "shell", inline: "hostnamectl set-hostname #{name}"
-	config.vm.provision "shell", inline: <<-SHELL
-	HOSTS=$(head -n7 /etc/hosts)
-	echo -e "$HOSTS" > /etc/hosts
-	echo '192.168.56.#{conf["ip"]} #{name}' >> /etc/hosts
-	# Habilita acesso SSH através de senha
-	sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
-	systemctl restart sshd
-	SHELL
-	# Executa shell script externo, para o caso de querer subir as VMs instalando pacotes, configurando serviços e aplicações
-	#config.vm.provision "shell", path: "script.sh"
+	  # Executa shell script inline
+ 	  machine.vm.provision "shell", inline: "hostnamectl set-hostname #{name}"
+	  config.vm.provision "shell", inline: <<-SHELL
+	  HOSTS=$(head -n7 /etc/hosts)
+	  echo -e "$HOSTS" > /etc/hosts
+	  echo '192.168.56.#{conf["ip"]} #{name}' >> /etc/hosts
+	  # Habilita acesso SSH através de senha
+	  sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+	  systemctl restart sshd
+	  SHELL
     end
   end
+  # Executa shell script externo, para o caso de querer subir as VMs instalando pacotes, configurando serviços e aplicações
+  #config.vm.provision "shell", path: "script.sh"
 end
