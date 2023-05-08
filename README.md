@@ -42,7 +42,7 @@ Abaixo de cada um segue o link para download.
 
 Antes de executar os passos abaixo, instale o plugin vagrant-vbguest no host, para habilitar o compartilhamento de pasta entre HOST e VMs.
 
-vagrant plugin uninstall vagrant-vbguest
+**vagrant plugin install vagrant-vbguest**
 
 ![App Screenshot](images/img0.png)
 
