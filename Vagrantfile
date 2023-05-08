@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
   # Habilita instalação do vbguest na VM do virtualbox
   config.vbguest.installer_options = { allow_kernel_upgrade: true }
   # Configura o compartilhamento da pasta raiz do vagrant do HOST com a VM
-  config.vm.synced_folder ".", "/home/vagrant"
+  #config.vm.synced_folder ".", "/home/vagrant"
 
   machines.each do |name, conf|
     config.vm.define "#{name}" do |machine|
