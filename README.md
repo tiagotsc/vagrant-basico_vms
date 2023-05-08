@@ -38,6 +38,14 @@ Abaixo de cada um segue o link para download.
 
 ### Siga as etapas
 
+#### Observação
+
+Antes de executar os passos abaixo, instale o plugin vagrant-vbguest no host, para habilitar o compartilhamento de pasta entre HOST e VMs.
+
+vagrant plugin uninstall vagrant-vbguest
+
+![App Screenshot](images/img0.png)
+
 1 - Crie uma pasta com nome de sua preferência em qualquer lugar do seu SO. No meu caso vou chama lá de **projeto**.
 
 2 - Entre na pasta **projeto** e dentro dela crie um arquivo chamado **Vagrantfile**, apenas o nome sem extensão, adicione o seguinte conteúdo e salve.

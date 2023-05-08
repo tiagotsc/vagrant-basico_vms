@@ -21,6 +21,14 @@ Vagrant.configure("2") do |config|
   #config.ssh.username = 'vagrant'
   #config.ssh.password = 'vagrant'
   #config.ssh.insert_key = false
+  
+  # Compartilhamento de pasta do HOST para VM
+  # É previso instalar o plugin no HOST "vagrant plugin install vagrant-vbguest"
+  # Se tiver algum problema é possível desistalar no HOST através de "vagrant plugin uninstall vagrant-vbguest"
+  # Habilita instalação do vbguest na VM do virtualbox
+  config.vbguest.installer_options = { allow_kernel_upgrade: true }
+  # Configura o compartilhamento da pasta raiz do vagrant do HOST com a VM
+  config.vm.synced_folder ".", "/home/vagrant"
 
   machines.each do |name, conf|
     config.vm.define "#{name}" do |machine|
