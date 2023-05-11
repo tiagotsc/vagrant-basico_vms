@@ -64,7 +64,7 @@ Antes de executar os passos abaixo, instale o plugin vagrant-vbguest no host, pa
 
 ![App Screenshot](images/img1.png)
 
-https://github.com/tiagotsc/vagrant-basico_vms/blob/fe57b6b656a125c59b3dcb774271aac53b3f87be/Vagrantfile#L1-L70
+https://github.com/tiagotsc/vagrant-vms_group/blob/33365b1e4be99bf72ed3f17d66aca4c1552b8175/Vagrantfile#L1-L70
 
 3 - Ainda dentro da pasta **projetos**, vamos subir nossas VMs, via linha de comando, execute:
 
