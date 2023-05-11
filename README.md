@@ -101,7 +101,7 @@ O mesmo pode ser feito nas outras VMs, caso queira acessá-las.
 
 ### Alguns comandos úteis
 
-Via linha de comando, é preciso estar na pasta "**projeto**", pasta aonde está o Vagrantfile,  para executar os comando.
+Via linha de comando, é preciso estar na pasta "**projeto**", pasta onde está o **Vagrantfile**,  para executar os comandos:
 
 ```bash
 # Desliga VMs
