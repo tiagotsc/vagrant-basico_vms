@@ -64,7 +64,7 @@ Antes de executar os passos abaixo, instale o plugin vagrant-vbguest no host, pa
 
 ![App Screenshot](images/img1.png)
 
-https://github.com/tiagotsc/vagrant-basico_vms/blob/fe57b6b656a125c59b3dcb774271aac53b3f87be/Vagrantfile#L1-L66
+https://github.com/tiagotsc/vagrant-vms_group/blob/d1648864ff8370b18d21e965e2e8204183b16a1c/Vagrantfile#L1-L66
 
 3 - Ainda dentro da pasta **projetos**, vamos subir nossas VMs, via linha de comando, execute:
 
@@ -113,6 +113,8 @@ vagrant reload
 # Destruir VMs
 vagrant destroy
 ```
+
+Todo o tutorial aplicado aqui, já se encontra pronto para uso nesse repositório, basta clonar e subir o ambiente.
 
 #### Documentação oficial do Vagrant
 
