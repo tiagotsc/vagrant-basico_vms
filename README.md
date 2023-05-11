@@ -1,11 +1,11 @@
 ﻿
 ## Vagrant - Provisionando VMs para testes ou desenvolvimento
 
-Será criado de forma rápida e objetiva, com poucos comandos, um conjunto de VMs que poderá servir de base para testes ou desenvolvimento de algo.
+Será criado de forma rápida e objetiva, com poucos comandos, um conjunto de VMs que poderá servir de base para testes, como cluster ou desenvolvimento de algo.
 
 Inclusive é possível definir uma série de configurações e já subi-las no momento da criação das VMs. Assim quando se acessar as VMs, elas já estarão configuradas e prontas para uso, conforme a necessidade.
 
-No exemplo a seguir serão criados 3 VMs no VirtualBox, que terão as seguintes identificações:
+No exemplo a seguir será criado 3 VMs no VirtualBox, que terão as seguintes identificações:
 
 | Hostname   | IP       |
 | :---------- | :--------- |
@@ -13,11 +13,19 @@ No exemplo a seguir serão criados 3 VMs no VirtualBox, que terão as seguintes 
 | vm2 | 192.168.56.151 |
 | vm3 | 192.168.56.152 |
 
+Tudo que for implementado ou criado na pasta raiz desse tutorial, já ficará disponível dentro do diretório da VM em:
+
+**/home/vagrant/projeto**
+
 ### Observação
 
 Vagrant só é recomendado para ambientes de testes e desenvolvimento, conforme pode ser visto no link abaixo.
 
 https://developer.hashicorp.com/vagrant/intro/vs/terraform
+
+### Versões de softwares utilizados nesse tutorial
+
+SO Windows 11, Vagrant 2.3.3 e VirtualBox 7.0.6
 
 ### Requisitos mínimos
 
@@ -35,6 +43,10 @@ Abaixo de cada um segue o link para download.
 - Putty (Software de cliente remoto)
 
   https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+- Vagrant - plugin vbguest, via linha de comando, execute:
+
+  vagrant plugin install vagrant-vbguest
 
 ### Siga as etapas
 
