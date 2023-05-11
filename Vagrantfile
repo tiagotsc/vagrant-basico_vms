@@ -12,10 +12,6 @@ Vagrant.configure("2") do |config|
   # Toda a configuração do Vagrant é feita aqui. A configuração mais comum
   # opções estão documentadas e comentadas abaixo. Para uma referência completa,
   # consulte a documentação online em vagrantup.com.
-
-  # Se true, qualquer conexão SSH feita habilitará o encaminhamento do agente.
-  # Valor padrão: false
-  config.ssh.forward_agent = true
   
   # Define o usuário padrão SSH
   #config.ssh.username = 'vagrant'
