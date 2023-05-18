@@ -104,14 +104,20 @@ O mesmo pode ser feito nas outras VMs, caso queira acessá-las.
 Via linha de comando, é preciso estar na pasta "**projeto**", pasta onde está o **Vagrantfile**,  para executar os comandos:
 
 ```bash
-# Desliga VMs
+# Liga VMs, ou cria, caso ainda não exista
 vagrant up
+
+# Desliga VMs
+vagrant halt
 
 # Reiniciar VMs
 vagrant reload
 
-# Destruir VMs
+# Destrói VMs, mas pergunta antes
 vagrant destroy
+
+# Destrói VMs sem perguntar
+vagrant destroy -f
 ```
 
 Todo o tutorial aplicado aqui, já se encontra pronto para uso nesse repositório, basta clonar e subir o ambiente.
