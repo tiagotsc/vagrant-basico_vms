@@ -101,9 +101,9 @@ O mesmo pode ser feito nas outras VMs, caso queira acessá-las.
 
 ### Alguns comandos úteis
 
-Via linha de comando, é preciso estar na pasta "**projeto**", pasta onde está o **Vagrantfile**,  para executar os comandos:
-
 ```bash
+##### VAGRANT - é preciso estar na pasta que contém o Vagrantfile #####
+
 # Liga VMs, ou cria, caso ainda não exista
 vagrant up
 
