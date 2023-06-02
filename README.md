@@ -1,7 +1,7 @@
 ﻿
 ## Vagrant - Provisionando VMs para testes ou desenvolvimento
 
-Será criado de forma rápida e objetiva, com poucos comandos, um conjunto de VMs que poderá servir de base para testes, como cluster ou desenvolvimento de algo.
+Passo a passo de como subir um conjunto de VMs que poderá servir de base para testes, como cluster ou desenvolvimento de algo.
 
 Inclusive é possível definir uma série de configurações e já subi-las no momento da criação das VMs. Assim quando se acessar as VMs, elas já estarão configuradas e prontas para uso, conforme a necessidade.
 
